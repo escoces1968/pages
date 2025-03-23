@@ -11,7 +11,7 @@ base_url = "https://www.stampalbums.com/pages/"
 country = input("Ingrese el nombre: ")
 
 # Generar nombres de archivo con años al final
-def generate_file_names(country, years=range(2000, 2026), extension=".pdf"):
+def generate_file_names(country, years, extension=".pdf"):
     for year in years:
             yield f"{country}{year}{extension}"
 
