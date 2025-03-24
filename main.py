@@ -26,6 +26,6 @@ def download_file(file_url, file_name):
         print(f"No encontrado: {file_url}")
 
 # Probar combinaciones
-for file_name in generate_file_names(country, years=range(1840, 2001)):  # Cambia el rango según lo necesites
+for file_name in generate_file_names(country, years=range(1840,2025)):  # Cambia el rango según lo necesites
     file_url = base_url + file_name
     download_file(file_url, file_name)
